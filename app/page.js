@@ -93,7 +93,7 @@ export default function Home() {
                   Dr. Abdu is a distinguished dental professional with over 15 years of experience in transforming smiles and improving lives through advanced dental care.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Specializing in cosmetic dentistry, dental implants, and orthodontics, Dr. Abdu's approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
+                  Specializing in cosmetic dentistry, dental implants, and orthodontics, Dr. Abdu&apos;s approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
                 </p>
               </div>
 
@@ -241,7 +241,7 @@ export default function Home() {
               <span className="gradient-text">Before & After</span> Gallery
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See the incredible transformations and beautiful smiles we've created
+              See the incredible transformations and beautiful smiles we&apos;ve created
             </p>
           </div>
           
@@ -293,7 +293,7 @@ export default function Home() {
             ].map((testimonial, index) => (
               <div key={index} className={`glass glass-hover rounded-2xl p-8 transition-all duration-700 delay-${index * 200} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <div className="text-2xl mb-4">{testimonial.rating}</div>
-                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-6 italic leading-relaxed">&quot;{testimonial.text}&quot;</p>
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
               </div>
             ))}

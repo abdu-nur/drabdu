@@ -61,39 +61,132 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                Meet <span className="gradient-text">Dr. Abdu</span>
-              </h2>
-              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-                A visionary in modern dentistry, Dr. Abdu combines years of expertise with the latest technological innovations to deliver exceptional dental care.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Specializing in cosmetic dentistry, dental implants, and orthodontics, Dr. Abdu's approach focuses on creating beautiful, healthy smiles through precision and care.
-              </p>
-              <div className="flex gap-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">15+</div>
-                  <div className="text-gray-600">Years Experience</div>
+      <section id="about" className="py-24 px-8 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-64 h-64 bg-gradient-to-br from-blue-100/30 to-cyan-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-br from-cyan-100/20 to-blue-100/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+              <span className="text-blue-600 font-semibold tracking-wider uppercase text-sm">About</span>
+              <div className="w-12 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+            </div>
+            <h2 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6">
+              Meet <span className="gradient-text">Dr. Abdu</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              A visionary in modern dentistry, combining expertise with cutting-edge technology
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-16 items-center">
+            {/* Left Column - Content */}
+            <div className="lg:col-span-7 space-y-8">
+              {/* Main Description */}
+              <div className="space-y-6">
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  Dr. Abdu is a distinguished dental professional with over 15 years of experience in transforming smiles and improving lives through advanced dental care.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Specializing in cosmetic dentistry, dental implants, and orthodontics, Dr. Abdu's approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
+                </p>
+              </div>
+
+              {/* Expertise Areas */}
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="glass rounded-2xl p-6 border border-white/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <h4 className="font-semibold text-gray-900">Cosmetic Dentistry</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">Veneers, whitening, smile makeovers</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">1000+</div>
-                  <div className="text-gray-600">Smiles Transformed</div>
+                <div className="glass rounded-2xl p-6 border border-white/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
+                    <h4 className="font-semibold text-gray-900">Dental Implants</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">Permanent tooth replacement solutions</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">99%</div>
-                  <div className="text-gray-600">Patient Satisfaction</div>
+                <div className="glass rounded-2xl p-6 border border-white/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <h4 className="font-semibold text-gray-900">Orthodontics</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">Modern braces and aligner solutions</p>
+                </div>
+                <div className="glass rounded-2xl p-6 border border-white/20">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-3 h-3 bg-cyan-400 rounded-full"></div>
+                    <h4 className="font-semibold text-gray-900">Preventive Care</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">Comprehensive oral health maintenance</p>
+                </div>
+              </div>
+
+              {/* Statistics */}
+              <div className="grid grid-cols-3 gap-8 pt-8">
+                <div className="text-center group">
+                  <div className="relative">
+                    <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">
+                      15+
+                    </div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-3 rounded-full"></div>
+                  </div>
+                  <div className="text-gray-600 font-medium">Years of Excellence</div>
+                </div>
+                <div className="text-center group">
+                  <div className="relative">
+                    <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">
+                      1000+
+                    </div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-3 rounded-full"></div>
+                  </div>
+                  <div className="text-gray-600 font-medium">Smiles Transformed</div>
+                </div>
+                <div className="text-center group">
+                  <div className="relative">
+                    <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">
+                      99%
+                    </div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-3 rounded-full"></div>
+                  </div>
+                  <div className="text-gray-600 font-medium">Patient Satisfaction</div>
                 </div>
               </div>
             </div>
-            <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-              <div className="glass rounded-3xl p-8 backdrop-blur-xl">
-                <div className="w-80 h-96 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center">
-                  <div className="text-6xl">🦷</div>
+
+            {/* Right Column - Visual */}
+            <div className="lg:col-span-5">
+              <div className="relative">
+                {/* Main Image Container */}
+                <div className="glass rounded-3xl p-8 backdrop-blur-xl border border-white/20 relative overflow-hidden">
+                  <div className="w-full h-96 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                    {/* Floating elements inside */}
+                    <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-full opacity-60 float"></div>
+                    <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-cyan-200 to-blue-200 rounded-full opacity-60 float-delay-1"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl">🦷</div>
+                  </div>
+                  
+                  {/* Decorative overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent pointer-events-none"></div>
                 </div>
+
+                {/* Floating badge */}
+                <div className="absolute -top-4 -right-4 glass rounded-2xl px-6 py-3 backdrop-blur-xl border border-white/20">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-semibold text-gray-800">Available Today</span>
+                  </div>
+                </div>
+
+                {/* Bottom accent */}
+                <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
               </div>
             </div>
           </div>

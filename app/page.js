@@ -340,7 +340,7 @@ export default function Home() {
             <p className="text-gray-400">Premium Dental Care & Cosmetic Dentistry</p>
           </div>
           <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-400">&copy; 2024 Dr. Abdu. All rights reserved.</p>
+            <p className="text-gray-400">&copy; 2025 Dr. Abdu. All rights reserved.</p>
           </div>
         </div>
       </footer>

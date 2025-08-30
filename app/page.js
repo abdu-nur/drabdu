@@ -316,7 +316,7 @@ export default function Home() {
               <div className="glass rounded-2xl p-8">
                 <div className="text-3xl mb-4">📞</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Call Us</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+251913161841</p>
               </div>
               <div className="glass rounded-2xl p-8">
                 <div className="text-3xl mb-4">📧</div>

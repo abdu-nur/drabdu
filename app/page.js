@@ -321,7 +321,7 @@ export default function Home() {
               <div className="glass rounded-2xl p-8">
                 <div className="text-3xl mb-4">📧</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email Us</h3>
-                <p className="text-gray-600">hello@drabdu.com</p>
+                <p className="text-gray-600">hello@.com</p>
               </div>
             </div>
             

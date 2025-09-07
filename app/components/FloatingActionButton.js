@@ -6,8 +6,8 @@ export default function FloatingActionButton() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const quickActions = [
-    { icon: '📞', label: 'Call Now', action: 'tel:+15551234567' },
-    { icon: '📧', label: 'Email', action: 'mailto:hello@drabdu.com' },
+    { icon: '📞', label: 'Call Now', action: 'tel:+251913161841' },
+    { icon: '📧', label: 'Email', action: 'mailto:drabdu@nurbros.com' },
     { icon: '📅', label: 'Book Online', action: '#contact' }
   ];
 

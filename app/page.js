@@ -249,7 +249,7 @@ export default function Home() {
             {[1, 2, 3, 4].map((item, index) => (
               <div key={index} className={`glass rounded-2xl overflow-hidden transition-all duration-700 delay-${index * 200} ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                 <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-                  <div className="text-4xl">📸</div>
+                  <div className="text-4xl"><img src='https://raw.githubusercontent.com/abdu-nur/drabdu/refs/heads/main/public/med.avif?token=GHSAT0AAAAAADKNTEBZR5XJDMITJB5ZUSCE2F67K7A'></img>📸</div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Case Study {item}</h3>

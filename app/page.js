@@ -347,3 +347,41 @@ export default function Home() {
     </div>
   );
 }
+import { useState } from "react";
+import BookingModal from "./components/BookingModal";
+
+export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const SHEET_URL = "YOUR_WEB_APP_URL"; // replace with your deployed Google Apps Script URL
+
+  return (
+    <div>
+      {/* ... your existing sections ... */}
+
+      {/* Hero Button */}
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="glass glass-hover px-12 py-4 text-lg font-semibold text-gray-800 rounded-full glow-hover"
+      >
+        Book Consultation
+      </button>
+
+      {/* Contact Section Button */}
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="glass glass-hover px-16 py-5 text-xl font-semibold text-gray-800 rounded-full glow-hover"
+      >
+        Book Your Consultation
+      </button>
+
+      {/* Booking Modal */}
+      <BookingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        sheetUrl={SHEET_URL}
+      />
+    </div>
+  );
+}
+

@@ -70,7 +70,7 @@ export default function Home() {
               onClick={() => setShowPatientModal(true)}
               className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
             >
-              <span className="relative z-10">Book Free Consultation</span>
+              <span className="relative z-10">Book Appointment</span>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             
@@ -416,7 +416,7 @@ export default function Home() {
               onClick={() => setShowPatientModal(true)}
               className="group relative px-12 py-5 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold text-xl rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
             >
-              <span className="relative z-10">Book Your Free Consultation</span>
+              <span className="relative z-10">Book Your Appointment</span>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
           </div>

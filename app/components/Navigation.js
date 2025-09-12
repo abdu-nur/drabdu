@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-export default function Navigation() {
+export default function Navigation({ onBookNow }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -60,7 +60,10 @@ export default function Navigation() {
 
               {/* CTA Button */}
               <div className="hidden md:block">
-                <button className="glass-hover px-6 py-3 rounded-full text-gray-800 font-semibold glow-hover">
+                <button 
+                  onClick={onBookNow}
+                  className="glass-hover px-6 py-3 rounded-full text-gray-800 font-semibold glow-hover transition-all duration-300 hover:scale-105"
+                >
                   Book Now
                 </button>
               </div>
@@ -130,7 +133,13 @@ export default function Navigation() {
 
             {/* Mobile CTA */}
             <div className="pt-8">
-              <button className="w-full glass-hover py-4 rounded-2xl text-gray-800 font-semibold text-lg glow-hover">
+              <button 
+                onClick={() => {
+                  onBookNow()
+                  setIsMobileMenuOpen(false)
+                }}
+                className="w-full glass-hover py-4 rounded-2xl text-gray-800 font-semibold text-lg glow-hover transition-all duration-300 hover:scale-105"
+              >
                 Book Consultation
               </button>
             </div>

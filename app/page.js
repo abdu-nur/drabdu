@@ -114,7 +114,7 @@ export default function Home() {
               Meet <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 bg-clip-text text-transparent">Dr. Abdu</span>
             </h2>
             <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light">
-              A visionary in modern dentistry, combining decades of expertise with cutting-edge technology to create life-changing transformations
+              A visionary in modern dentistry, combining expertise with cutting-edge technology to create life-changing transformations
             </p>
           </div>
 
@@ -124,20 +124,20 @@ export default function Home() {
               {/* Main Description */}
               <div className="space-y-8">
                 <p className="text-xl text-slate-700 leading-relaxed font-light">
-                  Dr. Abdu is a distinguished dental professional with over 15 years of experience in transforming smiles and improving lives through advanced dental care.
+                  Dr. Abdu is a distinguished dental professional with experience in transforming smiles and improving lives through advanced dental care.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  Specializing in cosmetic dentistry, dental implants, and orthodontics, Dr. Abdu&apos;s approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
+                  Specializing in cosmetic dentistry, Endodontics, and orthodontics, Dr. Abdu&apos;s approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
                 </p>
               </div>
 
               {/* Enhanced Expertise Areas */}
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
+                  { title: "Preventive Care", desc: "Comprehensive oral health maintenance", color: "from-cyan-400 to-blue-400" },
                   { title: "Cosmetic Dentistry", desc: "Veneers, whitening, smile makeovers", color: "from-cyan-500 to-blue-500" },
-                  { title: "Dental Implants", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" },
                   { title: "Orthodontics", desc: "Modern braces and aligner solutions", color: "from-indigo-500 to-cyan-500" },
-                  { title: "Preventive Care", desc: "Comprehensive oral health maintenance", color: "from-cyan-400 to-blue-400" }
+                  { title: "Dental Implants", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" }
                 ].map((expertise, index) => (
                   <div key={index} className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-white/50 hover:bg-white/90 transition-all duration-500 hover:scale-105 hover:shadow-xl">
                     <div className="flex items-center gap-4 mb-4">
@@ -236,17 +236,7 @@ export default function Home() {
                 ),
                 features: ["Veneers", "Teeth Whitening", "Smile Design", "Composite Bonding"]
               },
-              {
-                title: "Dental Implants",
-                description: "Permanent tooth replacement solutions that look, feel, and function exactly like natural teeth.",
-                icon: (
-                  <svg className="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4" />
-                  </svg>
-                ),
-                features: ["Single Implants", "Implant Bridges", "Full Arch Restoration", "Bone Grafting"]
-              },
+
               {
                 title: "Orthodontics",
                 description: "Modern braces and clear aligner solutions for perfectly aligned teeth and beautiful smiles.",
@@ -257,6 +247,17 @@ export default function Home() {
                   </svg>
                 ),
                 features: ["Traditional Braces", "Clear Aligners", "Lingual Braces", "Retainers"]
+              },
+                            {
+                title: "Dental Implants",
+                description: "Permanent tooth replacement solutions that look, feel, and function exactly like natural teeth.",
+                icon: (
+                  <svg className="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4" />
+                  </svg>
+                ),
+                features: ["Single Implants", "Implant Bridges", "Full Arch Restoration", "Bone Grafting"]
               }
             ].map((service, index) => (
               <div key={index} className={`group relative bg-white/90 backdrop-blur-sm rounded-3xl p-10 text-center transition-all duration-700 scale-105 shadow-2xl border border-white/50 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: `${index * 200}ms` }}>

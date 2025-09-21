@@ -153,7 +153,7 @@ export default function Home() {
               {/* Enhanced Statistics */}
               <div className="grid grid-cols-3 gap-12 pt-12">
                 {[
-                  { number: "Expertise", label: "Patient-Centered Care" },
+                  { number: "Years", label: "Of Patient-Centered Care" },
                   { number: "1000+", label: "Smiles Transformed" },
                   { number: "99%", label: "Patient Satisfaction" }
                 ].map((stat, index) => (

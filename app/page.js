@@ -127,7 +127,7 @@ export default function Home() {
                   Dr. Abdu is a distinguished dental professional with experience in transforming smiles and improving lives through advanced dental care.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  Specializing in cosmetic dentistry, Endodontics, and orthodontics, Dr. Abdu&apos;s approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
+                  Delivering excellence in cosmetic dentistry, Endodontics, and orthodontics, Dr. Abdu&apos;s approach combines artistic vision with scientific precision to create beautiful, healthy smiles that last a lifetime.
                 </p>
               </div>
 

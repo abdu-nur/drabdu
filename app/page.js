@@ -154,7 +154,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-12 pt-12">
                 {[
                   { number: "Years", label: "Of Patient-Centered Care" },
-                  { number: "1000+", label: "Smiles Transformed" },
+                  { number: "700+", label: "Smiles Transformed" },
                   { number: "99%", label: "Patient Satisfaction" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center group">

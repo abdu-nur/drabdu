@@ -153,7 +153,7 @@ export default function Home() {
               {/* Enhanced Statistics */}
               <div className="grid grid-cols-3 gap-12 pt-12">
                 {[
-                  { number: "15+", label: "Years of Excellence" },
+                  { number: "Expertise", label: "Patient-Centered Care" },
                   { number: "1000+", label: "Smiles Transformed" },
                   { number: "99%", label: "Patient Satisfaction" }
                 ].map((stat, index) => (
@@ -225,6 +225,17 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
+                            {
+                title: "General Dentistry",
+                description: "Modern braces and clear aligner solutions for perfectly aligned teeth and beautiful smiles.",
+                icon: (
+                  <svg className="w-16 h-16 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ),
+                features: ["checkups", "fillings", "crowns", "cleanings",  "preventive care"]
+              },
               {
                 title: "Cosmetic Dentistry",
                 description: "Transform your smile with advanced cosmetic procedures including veneers, whitening, and complete smile makeovers.",

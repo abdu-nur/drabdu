@@ -137,7 +137,7 @@ export default function Home() {
                   { title: "Preventive Care", desc: "Comprehensive oral health maintenance", color: "from-cyan-400 to-blue-400" },
                   { title: "Cosmetic Dentistry", desc: "Veneers, whitening, smile makeovers", color: "from-cyan-500 to-blue-500" },
                   { title: "Orthodontics", desc: "Modern braces and aligner solutions", color: "from-indigo-500 to-cyan-500" },
-                  { title: "", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" }
+                  { title: "Prosthodontics", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" }
                 ].map((expertise, index) => (
                   <div key={index} className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-white/50 hover:bg-white/90 transition-all duration-500 hover:scale-105 hover:shadow-xl">
                     <div className="flex items-center gap-4 mb-4">
@@ -234,7 +234,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4" />
                   </svg>
                 ),
-                features: ["checkups", "fillings", "crowns", "cleanings",  "preventive care"]
+                features: ["Checkups", "Fillings", "Crowns", "Cleanings",  "Preventive care"]
               },
               {
                 title: "Cosmetic Dentistry",
@@ -326,19 +326,13 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
+                name: "Yusuf Adem",
                 text: "Dr. Abdu transformed my smile completely. The results exceeded my expectations and the entire process was comfortable and professional!",
                 rating: 5,
                 treatment: "Cosmetic Dentistry"
               },
               {
-                name: "Michael Chen",
-                text: "Professional, caring, and incredibly skilled. My dental implant looks and feels perfect. I couldn't be happier with the results.",
-                rating: 5,
-                treatment: "Dental Implants"
-              },
-              {
-                name: "Emily Rodriguez",
+                name: "Maida Haji",
                 text: "The best dental experience I've ever had. Dr. Abdu's attention to detail and gentle approach made all the difference.",
                 rating: 5,
                 treatment: "Orthodontics"

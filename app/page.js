@@ -137,7 +137,7 @@ export default function Home() {
                   { title: "Preventive Care", desc: "Comprehensive oral health maintenance", color: "from-cyan-400 to-blue-400" },
                   { title: "Cosmetic Dentistry", desc: "Veneers, whitening, smile makeovers", color: "from-cyan-500 to-blue-500" },
                   { title: "Orthodontics", desc: "Modern braces and aligner solutions", color: "from-indigo-500 to-cyan-500" },
-                  { title: "Dental Implants", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" }
+                  { title: "", desc: "Permanent tooth replacement solutions", color: "from-blue-500 to-indigo-500" }
                 ].map((expertise, index) => (
                   <div key={index} className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 border border-white/50 hover:bg-white/90 transition-all duration-500 hover:scale-105 hover:shadow-xl">
                     <div className="flex items-center gap-4 mb-4">
